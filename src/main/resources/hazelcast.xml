@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hazelcast xmlns="http://www.hazelcast.com/schema/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.hazelcast.com/schema/config hazelcast-config-3.10.xsd">
+    <properties>
+        <!--<property name="hazelcast.discovery.enabled">true</property>-->
+        <property name="hazelcast.discovery.enabled">false</property>
+    </properties>
+    <network>
+        <join>
+            <tcp-ip enabled="false"/>
+            <multicast enabled="false"/>
+            <aws enabled="false"/>
+            <!--<discovery-strategies>-->
+                <!--<discovery-strategy enabled="true" class="com.hazelcast.azure.AzureDiscoveryStrategy">-->
+                    <!--<properties>-->
+                        <!--<property name="client-id"></property>-->
+                        <!--<property name="client-secret"></property>-->
+                        <!--<property name="tenant-id"></property>-->
+                        <!--<property name="subscription-id"></property>-->
+                        <!--<property name="cluster-id"></property>-->
+                        <!--<property name="group-name"></property>-->
+                    <!--</properties>-->
+                <!--</discovery-strategy>-->
+            <!--</discovery-strategies>-->
+        </join>
+    </network>
+</hazelcast>

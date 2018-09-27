@@ -1,4 +1,4 @@
-package com.hazelcast.pcf.integration;
+package com.hazelcast.azure;
 
 @SuppressWarnings("unused")
 public class CommandResponse {
